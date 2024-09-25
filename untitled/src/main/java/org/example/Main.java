@@ -8,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
 
         Ejercicios ejercicio = new Ejercicios();
-        //ejercicio.actividad_inicial();
-        ejercicio.actividad_prueba();
+        ejercicio.actividad_inicial();
+        //ejercicio.actividad_prueba();
 
 
 

@@ -7,12 +7,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Ejercicios ejercicio = new Ejercicios();
-        ejercicio.actividad_inicial();
+        //Ejercicios ejercicio = new Ejercicios();
+        //ejercicio.actividad_inicial();
         //ejercicio.actividad_prueba();
 
+        //Operadores operadores = new Operadores();
+        //operadores.aritmeticos();
+        //operadores.asignacion();
+        //operadores.relacionales();
+        //operadores.logicos();
 
-
+        Bocata bocataej = new Bocata();
+        bocataej.Bocata_ejercicio();
 
 
     }

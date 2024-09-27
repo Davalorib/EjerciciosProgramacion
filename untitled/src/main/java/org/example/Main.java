@@ -9,7 +9,11 @@ public class Main {
 
         //Ejercicios ejercicio = new Ejercicios();
         //ejercicio.actividad_inicial();
-        //ejercicio.actividad_prueba();
+        //ejercicio.ejercicio3();
+
+        Bateria bateria = new Bateria();
+        bateria.bateria_ej1();
+        //bateria.bateria_ej2();
 
         //Operadores operadores = new Operadores();
         //operadores.aritmeticos();
@@ -17,8 +21,12 @@ public class Main {
         //operadores.relacionales();
         //operadores.logicos();
 
-        Bocata bocataej = new Bocata();
-        bocataej.Bocata_ejercicio();
+        //Excepciones excepciones = new Excepciones();
+        //excepciones.control_excepciones();
+
+
+        //Bocata bocataej = new Bocata();
+        //bocataej.Bocata_ejercicio();
 
 
     }

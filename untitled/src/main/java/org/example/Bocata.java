@@ -78,9 +78,6 @@ public class Bocata {
 
         }
 
-        //while(1>numelec>4){
-
-        //}
 
     }
 }

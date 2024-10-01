@@ -12,8 +12,9 @@ public class Main {
         //ejercicio.ejercicio3();
 
         Bateria bateria = new Bateria();
-        bateria.bateria_ej1();
+        //bateria.bateria_ej1();
         //bateria.bateria_ej2();
+        bateria.bateria_ej4();
 
         //Operadores operadores = new Operadores();
         //operadores.aritmeticos();

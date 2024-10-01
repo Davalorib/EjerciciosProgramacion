@@ -55,4 +55,52 @@ public class Bateria {
 
     }
 
+    public void bateria_ej4() {
+
+        Scanner entrada = new Scanner(System.in);
+
+        int base = 0;
+        int altura = 0;
+        int area = 0;
+        boolean base_r = true;
+        boolean altura_r = true;
+
+        while(base_r==true){
+
+            try {
+                System.out.println("Dame el valor de la base del triángulo");
+                base = entrada.nextInt();
+
+                if (base > 0) {
+
+                    base_r = false;
+                    while(altura_r==true) {
+                        System.out.println("");
+                        System.out.println("Dame el valor de la altura del triángulo");
+                        altura = entrada.nextInt();
+
+                        if (altura > 0) {
+                            altura_r = false;
+                            System.out.println("");
+                            System.out.println("CALCULANDO ÁREA DEL TRIÁNGULO DADO...");
+                            area = (base * altura) / 2;
+                            System.out.println("El área del triángulo es: " + area);
+
+                        } else {
+                            System.out.println("El valor de la altura tiene que ser positivo...");
+
+                        }
+                    }
+
+                } else {
+                    System.out.println("El valor de la base tiene que ser positivo...");
+
+                }
+
+            }catch(InputMismatchException er){
+                System.out.println("ERROR. Introduce un número válido...");
+                entrada.nextLine();
+            }
+        }
+    }
 }

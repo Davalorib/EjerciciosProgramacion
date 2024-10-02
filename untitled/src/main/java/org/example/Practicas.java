@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Practicas {
@@ -19,25 +20,30 @@ public class Practicas {
         System.out.println("Hola " + nombre + ". Introduce tu edad: ");
 
         while(edad_neg==true) {
+            try {
 
-            edad = entrada.nextInt();
+                edad = entrada.nextInt();
 
-            if (edad >= edad_voto) {
+                if (edad >= edad_voto) {
 
-                edad_neg = false;
-                System.out.println("Enhorabuena " + nombre + ". Puedes votar.");
+                    edad_neg = false;
+                    System.out.println("Enhorabuena " + nombre + ". Puedes votar.");
 
-            } else if (edad < 0) {
+                } else if (edad < 0) {
 
-                System.out.println("Introduce de nuevo tu edad: ");
+                    System.out.println("Introduce de nuevo tu edad: ");
 
-            } else {
+                } else {
 
-                edad_neg = false;
-                System.out.println("");
-                System.out.println("Lo siento " + nombre + ". No puedes votar.");
-                System.out.println("Te faltan " + (edad_voto - edad) + " años para ser mayor de edad.");
+                    edad_neg = false;
+                    System.out.println("");
+                    System.out.println("Lo siento " + nombre + ". No puedes votar.");
+                    System.out.println("Te faltan " + (edad_voto - edad) + " años para ser mayor de edad.");
+                }
 
+            } catch (InputMismatchException er) {
+                System.out.println("ERROR. Introduce un valor válido...");
+                entrada.nextLine();
             }
         }
     }
@@ -60,6 +66,7 @@ public class Practicas {
         System.out.println("   " + num_1);
         System.out.println(" x " + num_2);
         System.out.println("-------");
+
         String multi = Integer.toString(num_2);
         String dig1 = multi.substring(0,1);
         int dig_1 = Integer.parseInt(dig1);
@@ -67,6 +74,7 @@ public class Practicas {
         int dig_2 = Integer.parseInt(dig2);
         String dig3 = multi.substring(2,3);
         int dig_3 = Integer.parseInt(dig3);
+
         System.out.println("   " + (num_1*dig_3));
         System.out.println(" " + (num_1*dig_2) + "x");
         System.out.println("" + (num_1*dig_1) + "xx");

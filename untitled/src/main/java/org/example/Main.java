@@ -26,8 +26,8 @@ public class Main {
         //excepciones.control_excepciones();
 
         Practicas practicas = new Practicas();
-        practicas.practica_3();
-        //practicas.practica_4();
+        //practicas.practica_3();
+        practicas.practica_4();
 
         //Bocata bocataej = new Bocata();
         //bocataej.Bocata_ejercicio();

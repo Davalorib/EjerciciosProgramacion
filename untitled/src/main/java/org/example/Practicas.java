@@ -63,28 +63,28 @@ public class Practicas {
             try {
                 System.out.println("Introduce el multiplicando (3 cifras): ");
 
-                while(rep1 == true) {
-                num_1 = entrada.nextInt();
+                while(rep1 == true) { //repeticion para que sean numeros de 3 cifras
+                num_1 = entrada.nextInt(); //metemos 1er numero
 
-                    if (num_1 > 99 & num_1 < 1000) {
+                    if (num_1 > 99 & num_1 < 1000) { //si es de 3 cifras positivo paramos el while
                         rep1 = false;
                         System.out.println("Introduce el multiplicador (3 cifras): ");
 
-                    }else if (num_1 < 0) {
+                    }else if (num_1 < -99 & num_1 > -1000) { //si es de 3 cifras negativo paramos el while
                         rep1 = false;
                         System.out.println("Introduce el multiplicador (3 cifras): ");
 
-                    }else {
+                    }else { //lo contrario repetimos while
                         System.out.println("ERROR. Introduce un valor de 3 cifras: ");
-                        System.out.println("");
                         entrada.nextLine();
+                        System.out.println("");
                     }
                 }
 
-                while(rep2==true) {
+                while(rep2==true) { //repeticion para que sean numeros de 3 cifras
 
-                    num_2 = entrada.nextInt();
-                    if (num_2 > 99 & num_2 < 1000) {
+                    num_2 = entrada.nextInt(); //pedimos el 2º numero
+                    if (num_2 > 99 & num_2 < 1000) { //si es de 3 cifras
                         rep = false;
                         rep2 = false;
 
@@ -95,9 +95,9 @@ public class Practicas {
                         System.out.println(" x " + num_2);
                         System.out.println("-------");
 
-                        String multi = Integer.toString(num_2);
-                        String dig1 = multi.substring(0, 1);
-                        int dig_1 = Integer.parseInt(dig1);
+                        String multi = Integer.toString(num_2); //para ir cogiendo valores convertimos a string el numero
+                        String dig1 = multi.substring(0, 1); //cogemos ese valor del string
+                        int dig_1 = Integer.parseInt(dig1); //convertimos el valor a int
                         String dig2 = multi.substring(1, 2);
                         int dig_2 = Integer.parseInt(dig2);
                         String dig3 = multi.substring(2, 3);
@@ -110,7 +110,7 @@ public class Practicas {
                         System.out.println("-------");
                         System.out.println(num_1 * num_2);
 
-                    }else if (num_2 < 0){
+                    }else if (num_2 < -99 & num_2 > -1000){ //lo mismo para los negativos
 
                         rep = false;
                         rep2 = false;
@@ -122,7 +122,7 @@ public class Practicas {
                         System.out.println(" x " + num_2);
                         System.out.println("-------");
 
-                        String multi = Integer.toString(num_2);
+                        String multi = Integer.toString(num_2); //lo mismo de antes arreglandolo para que no coja el signo negativo
                         String dig1 = multi.substring(1, 2);
                         int dig_1 = Integer.parseInt(dig1);
                         String dig2 = multi.substring(2, 3);
@@ -137,7 +137,7 @@ public class Practicas {
                         System.out.println("-------");
                         System.out.println(num_1 * num_2);
 
-                    } else{
+                    } else{ //lo demas repetimos el while
 
                         System.out.println("");
                         System.out.println("ERROR. Introduce un valor de 3 cifras: ");
@@ -146,7 +146,7 @@ public class Practicas {
                     }
                 }
 
-            } catch (InputMismatchException er) {
+            } catch (InputMismatchException er) { //el catch para no poner letras 
                 System.out.println("ERROR. Introduce un valor válido...");
                 entrada.nextLine();
             }

@@ -146,7 +146,7 @@ public class Practicas {
                     }
                 }
 
-            } catch (InputMismatchException er) { //el catch para no poner letras 
+            } catch (InputMismatchException er) { //el catch para no poner letras
                 System.out.println("ERROR. Introduce un valor válido...");
                 entrada.nextLine();
             }

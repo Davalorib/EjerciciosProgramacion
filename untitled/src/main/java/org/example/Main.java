@@ -1,9 +1,5 @@
 package org.example;
 
-import java.util.Scanner;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
@@ -25,13 +21,13 @@ public class Main {
         //Excepciones excepciones = new Excepciones();
         //excepciones.control_excepciones();
 
-        Practicas practicas = new Practicas();
+        //Practicas practicas = new Practicas();
         //practicas.practica_3();
-        practicas.practica_4();
+        //practicas.practica_4();
 
         //Bocata bocataej = new Bocata();
         //bocataej.Bocata_ejercicio();
 
-
+        
     }
 }
